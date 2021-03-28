@@ -35,9 +35,10 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".kotlin.MainActivity" />
+        <!--<activity android:name=".kotlin.MainActivity" />-->
         <activity android:name=".java.MainActivity" />
 
+        <!--
         <service
             android:name=".kotlin.MyFirebaseMessagingService"
             android:exported="false">
@@ -45,10 +46,10 @@
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-
+        -->
         <!-- [START firebase_service] -->
         <service
-            android:name=".java.MyFirebaseMessagingService"
+            android:name="com.google.firebase.quickstart.fcm.java.MyFirebaseMessagingService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
